@@ -1,15 +1,41 @@
 function Content()
 {
+
+  const handleClick1=()=>
+  {
+    console.log("You clicked it");
+  }
+
+  const handleClick2=(name)=>
+  {
+    console.log(`${name} was clicked`);
+  }
+  const handleClick3=(e)=>
+  {
+    console.log(e);
+    console.log(e.target);
+    console.log(e.target.innerText);
+  }
   return (
 <main>
-  <ul>
-  <li>Apples</li>
-  <li>Bananas </li>
-  <li>Oranges </li>
-  <li>Grapes</li>
-  <li>Strawberries</li>
-  <li>Lemons</li>
-  </ul>
+  <p>
+    click event
+  </p>
+  <button onClick={()=>handleClick1()}>
+
+click me
+  </button>
+
+  <button onClick={()=>handleClick2("kabe")}>
+
+  one more
+  </button>
+
+  <button onClick={(e)=>handleClick3(e)}>
+
+  click me again
+  </button>
+
 </main>
   )
 }

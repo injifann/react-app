@@ -1,7 +1,7 @@
 
-import Header from './components/subComponent/Header.jsx'
-import Content from './components/subComponent/Content.jsx'
-import Footer from './components/subComponent/Footer.jsx'
+import Header from './components/Header.jsx'
+import Content from './components/Content.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
 
